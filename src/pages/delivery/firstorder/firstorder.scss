@@ -1,0 +1,54 @@
+.firstOrder {
+   color: #5e5d5d;
+   padding: 30px 80px;
+   background-color: rgb(244, 245, 245);
+   
+
+
+    div {
+        // margin-left: 100px;
+        // padding: 0 30px;
+
+
+    h1 {
+        font-weight: 500;
+        color: #343434;
+    }
+
+    div {
+        display: flex;
+        gap: 40px;
+        margin-top: 10px;
+        
+
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            // align-items: center;
+            width: 150px;
+            text-align: center;
+
+            div {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                color: grey;
+                font-weight: 500;
+            }
+
+
+        }
+    }
+
+}
+}

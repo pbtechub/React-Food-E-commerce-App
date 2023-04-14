@@ -1,0 +1,147 @@
+.restaurant {
+    padding: 35px 80px;
+    h1 {
+        font-weight: 500;
+        color: #343434;
+         margin-bottom: 35px;
+    }
+
+    div {
+       
+        display: flex;
+        flex-wrap: wrap;
+       gap: 45px;
+
+       .eachResto {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 330px;
+
+        .restImg {
+            width: 100%;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            height: 250px;
+
+            img {
+                width: 330px;
+                height: 250px;
+               
+            }
+            div {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                
+                padding: 2px 8px;
+                left: 0;
+                bottom: 10px;
+                width: 40%;
+                // height: 25px;
+                background-color: rgb(62, 62, 161);
+                
+                p {
+                    font-size: .75rem;
+                    color: #fff;
+                }
+            }
+
+            span {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                padding: 5px;
+                background-color: #dddada;
+                font-size: .7rem;
+                border-radius: 5px;
+                font-weight: 600;
+                color: #6e6d6d;
+            }
+        }
+
+        .restDetai {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.26);
+            padding-bottom: 20px;
+            .restDetaiTop {
+                display: flex;
+                justify-content: space-between;
+
+                
+                
+
+                h3 {
+                    color: #393939;
+                    font-weight: 600;
+                }
+
+                span {
+                    background-color: rgb(63, 150, 63);
+                    padding: 4px 5px;
+                    font-size: .7rem;
+                    font-weight: 600;
+                    color: #fff;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .restDetaiBott {
+                display: flex;
+                justify-content: space-between;
+
+                p{
+                    font-size: .85rem;
+                    color: grey;
+                    font-weight: 500;
+
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .restRate {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+           
+            
+
+            .arro {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: rgb(127, 157, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .arr {
+                    font-size: .8rem;
+                    color: #fff;
+                }
+
+            }
+
+            span {
+                font-size: .75rem;
+                color: #6e6d6d;
+                font-weight: 500;
+
+                span {
+                    margin-left: 3px;
+                }
+            }
+
+        }
+       }
+    }
+}

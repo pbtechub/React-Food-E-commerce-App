@@ -1,0 +1,117 @@
+.footer {
+    padding: 20px 80px;
+    background-color: rgb(244, 245, 245);
+    .footTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footLog {
+            margin-right: 30px;
+            img {
+               width: 130px;
+               height: 30px;
+         }
+    
+        }
+
+        .footBtn {
+           display: flex;
+           gap: 20px;
+           
+           
+            button {
+            display: flex;
+            align-items: center;
+            gap: 7px;    
+            border: .7px solid gray;
+            padding: 10px 10px;
+            border-radius: 5px;
+            background-color: transparent;
+
+            span {
+                font-size: 1rem;
+                color: rgb(49, 49, 49);
+            }
+
+            .footIcon {
+                font-size: 1.2rem;
+            }
+            
+        }
+        }
+
+       
+    }
+
+    .footMid {
+
+        margin-top: 40px;
+        border-bottom: 1px solid rgba(0,0,0,0.26);
+        padding-bottom: 40px;
+
+        .footMidWrap {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(5, 1fr);
+
+
+            div {
+
+                h4 {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    font-size: .85rem;
+                }
+
+                .footListSocial {
+                    flex-direction: row;
+                    gap: 7px;
+                    align-items: center;
+                }
+
+                .footList {
+                    flex-direction: column;
+                }
+
+                ul {
+                   display: flex;
+                    list-style: none;
+                   
+                    .footLinkSocial {
+                        width: 23px;
+                        height: 23px;
+                        border-radius: 50%;
+                        background-color: black;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    li {
+                        padding: 5px 0;
+
+                        .footLink {
+                            color: #fff;
+                            font-size: .9rem;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: gray;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footerBot {
+        padding: 25px 0;
+
+        p {
+            font-size: .8rem;
+            color: gray;
+        }
+    }
+}
