@@ -1,0 +1,122 @@
+.filterPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    .top {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(217, 214, 214);
+        padding: 20px;
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .closeBtn {
+            cursor: pointer;
+        }
+    }
+
+    .middle {
+        width: 100%;
+        height: calc(100vh - 150px);
+        border-bottom: 1px solid rgb(217, 214, 214);
+        display: flex;
+
+        .sidebar {
+            width: 30%;
+            height: 100%;
+            background-color: #F8F8F8;
+            ul {
+                list-style: none;
+            }
+            li {
+                padding: 20px 20px;
+                height: 64px;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                .soretdName {
+                    color: rgb(205, 75, 75);
+                    font-size: .8rem;
+                    font-weight: 400;
+                }
+            }
+    
+            .activeLink {
+                border-left: 3px solid rgb(219, 112, 112);
+            }
+        }
+
+        .feed {
+            padding: 20px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                div {
+                    display: flex;
+                    gap: 10px;
+                    
+                   .radio {
+                    width: 18px;
+                    color: rgb(219, 112, 112) !important;
+                    cursor: pointer;
+                   }
+
+                    .lable {
+                        color: rgb(41, 41, 41);
+                        font-weight: 300;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .bottom {
+        width: 100%;
+        height: 80px;
+        padding: 18px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+       
+        div {
+            display: flex;
+            gap: 20px;
+            
+
+            button {
+                width: 100px;
+                border: none;
+                padding: 12px;
+                border-radius: 7px;
+                font-size: 1rem;
+                color: grey;
+                background-color: #FCFCFC;
+                cursor: pointer;
+                &:hover {
+                    background-color: #f0f0f0;
+                }
+            }
+
+            :last-child {
+                color: #FFF;
+                background-color: rgb(200, 102, 102);
+                &:hover {
+                    background-color: rgb(185, 86, 86);
+                }
+            }
+        }
+
+    }
+}

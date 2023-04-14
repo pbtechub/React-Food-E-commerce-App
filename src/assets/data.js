@@ -33,6 +33,53 @@ export const categories = [
     }
 ]
 
+export const filterMenu = [
+    {
+        id: 1,
+        title: 'Sort by',
+    },
+    {
+        id: 2,
+        title: 'Cuisines',
+    },
+    {
+        id: 3,
+        title: 'Rating',
+    },
+    {
+        id: 4,
+        title: 'Cost per person',
+    },
+    {
+        id: 5,
+        title: 'More filters',
+    }
+]
+
+
+export const sortByList = [
+    {
+        id: 1,
+        title: 'Polpularity',
+    },
+    {
+        id: 2,
+        title: 'Rating: High to Low',
+    },
+    {
+        id: 3,
+        title: 'Delivery Time',
+    },
+    {
+        id: 4,
+        title: 'Cost: Low to High',
+    },
+    {
+        id: 5,
+        title: 'Cost: High to Low',
+    }
+]
+
 
 export const menuBtn = [
     {

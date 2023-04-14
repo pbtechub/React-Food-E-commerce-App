@@ -6,10 +6,17 @@ import { BsChevronDown } from 'react-icons/bs'
 import { useState } from 'react'
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import SearchDropdown from './serchDropdown/SearchDropdown'
 // import { IoChevronDownCircle } from 'react-icons/io'
 
 const Search = () => {
   const [locationHistory, setLocationHistory] = useState(false)
+  const [searchDropDown, setSearchDropDown] = useState(false)
+
+  const handleChange = () => {
+    setSearchDropDown(!searchDropDown)
+    
+  }
   return (
     <div className='searchBar'>
         <div className="currLocation">
@@ -23,7 +30,7 @@ const Search = () => {
         <div className="divider"></div>
         <div className="searchItems">
             <FiSearch size={23} className='searchIcon'/>
-            <input type="text" placeholder='Search for restaurant, cuisine or a dish...' />
+            <input type="text" placeholder='Search for restaurant, cuisine or a dish...' onChange={handleChange}/>
         </div>
         {locationHistory && (
         <div className="locationMenu">
@@ -34,8 +41,6 @@ const Search = () => {
                 <span>Using GPS</span>
               </div>
           </div>
-         
-
           <div className="recentLocation">
             <h4>Recent Locations</h4>
             <ul>
@@ -56,6 +61,12 @@ const Search = () => {
 
           </div>
          
+        </div>
+        )}
+
+        {searchDropDown && (
+        <div className='searchDropdown'>
+          <SearchDropdown />
         </div>
         )}
     </div>
