@@ -5,12 +5,16 @@ import { useContext } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
 import { filterMenu } from '../../../../assets/data';
 import { sortByList } from '../../../../assets/data';
+import { countryList } from '../../../../assets/counrtyName';
+import { ratings } from '../../../../assets/data';
 import { useState } from 'react';
 import { BorderLeft } from '@mui/icons-material';
+import { CiSearch } from 'react-icons/ci'
 
 const Filter = () => {
     const [selectedFilterMenu, setSelectedFilterMenu] = useState(1);
     const [sortedItem, setSortedItem] = useState('Popularity')
+    const [rating, setRating] = useState('Any')
     const { category, setCategory } = useContext(MenuContext)
     console.log(category);
   return (
@@ -51,6 +55,54 @@ const Filter = () => {
                       </div>
                     ))}
                    </form>
+                )}
+
+                {selectedFilterMenu === 2 && (
+                    <div className='counrty'>
+                        <div className='search'>
+                            <CiSearch style={{fontSize: '25px'}}/>
+                            <input type="text" placeholder='Search here'/>
+                        </div>
+
+                        <div className='counrtyName'>
+                            <ul>
+                                {countryList.map((counrty) => (
+                                    <li>
+                                        <input type="checkbox" name="name" value={counrty} />
+                                        <span>{counrty}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                    
+                )}
+
+                {selectedFilterMenu === 3 && (
+                    <div className='ratings'>
+                        <div className='showRating'>
+                            <span>Ratings</span>
+                            <h4>{rating}</h4>
+                        </div>
+                        <div className='selectRataing'>
+                            <div>
+                                {ratings.map((rate, idx) => (
+                                    <div>
+                                        <div className='left'>
+                                            <div className="dot"></div>
+                                            {idx !== 4 && (
+
+                                            <div className='bar'></div>
+                                            )}
+                                        </div>
+                                        <span>{rate.title}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                      
+                    </div>
+                    
                 )}
             </div>
         </div>

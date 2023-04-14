@@ -80,6 +80,29 @@ export const sortByList = [
     }
 ]
 
+export const ratings = [
+    {
+        id: 1,
+        title: 'Any',
+    },
+    {
+        id: 2,
+        title: '3.5',
+    },
+    {
+        id: 3,
+        title: '4',
+    },
+    {
+        id: 4,
+        title: '4.5',
+    },
+    {
+        id: 5,
+        title: '5',
+    }
+]
+
 
 export const menuBtn = [
     {

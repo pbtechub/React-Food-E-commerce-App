@@ -21,7 +21,7 @@ function App() {
   console.log(category);
 
   return (
-    <div className="App">
+    <div className='App' >
       <BrowserRouter>
         <Navbar />
         <Location />
@@ -32,13 +32,15 @@ function App() {
             <Route path='/nightlife' element={<NightLife />} />  
           </Routes>
           {category === 'Filters' && (
-            // <Filter />
             <div className='filterContainer'>
               <Filter />
             </div>
           )}
         <Footer />
       </BrowserRouter>
+      {category === 'Filters' && (
+        <div className='FilterOn'></div>
+          )}
     </div>
   );
 }
